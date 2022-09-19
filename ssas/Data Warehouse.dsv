@@ -1,0 +1,562 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="8613a023-c781-4ae7-8d31-4d1b14b71052" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Data Warehouse</ID>
+  <Name>Data Warehouse</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Data Warehouse</DataSourceID>
+  <Schema>
+    <xs:schema id="Data_x0020_Warehouse" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Data_x0020_Warehouse" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="b882cf88-fe42-4b89-96e3-3cb9ca58aaaa">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_DIM_DanhGia" msprop:design-time-name="56136287-a09f-4ee1-9821-7bf5abe147f3" msprop:DbTableName="DIM_DanhGia" msprop:FriendlyName="DIM_DanhGia" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="MaDanhGia" msprop:design-time-name="a2944c3d-a639-49b1-9931-557c8b694439" msprop:DbColumnName="MaDanhGia" msprop:FriendlyName="MaDanhGia">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DanhGia" msprop:design-time-name="85e410d8-ef60-48f4-abef-38a32864263b" msprop:DbColumnName="DanhGia" msprop:FriendlyName="DanhGia" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_DonViToChuc" msprop:design-time-name="b924ae40-ac55-4085-8694-25c28cae4494" msprop:DbTableName="DIM_DonViToChuc" msprop:FriendlyName="DIM_DonViToChuc" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="MaDonVi" msprop:design-time-name="16cdefca-4782-4a09-9406-4b94330bf7b1" msprop:DbColumnName="MaDonVi" msprop:FriendlyName="MaDonVi">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="TenDonVi" msprop:design-time-name="8a5303f4-7180-490b-9f0b-92dc6b06a255" msprop:DbColumnName="TenDonVi" msprop:FriendlyName="TenDonVi" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="200" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_KhachHang" msprop:design-time-name="23008e49-9fb4-45f8-a2d7-ca0c8fa8b0c9" msprop:DbTableName="DIM_KhachHang" msprop:FriendlyName="DIM_KhachHang" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="MaKH" msprop:design-time-name="da63122a-1b87-4edf-a998-66c16e27834f" msprop:DbColumnName="MaKH" msprop:FriendlyName="MaKH">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="TenKH" msprop:design-time-name="949e9783-8bc6-4363-92d3-71990cfb6b68" msprop:DbColumnName="TenKH" msprop:FriendlyName="TenKH" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_MaPhi" msprop:design-time-name="e2576c23-4bc4-4b1f-b837-90afde8f8468" msprop:DbTableName="DIM_MaPhi" msprop:FriendlyName="DIM_MaPhi" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="MaPhi" msprop:design-time-name="d9fcb398-8c71-46bd-8381-e977787199d9" msprop:DbColumnName="MaPhi" msprop:FriendlyName="MaPhi">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="KhoangPhi" msprop:design-time-name="dae4acbc-8b1d-4025-a540-e9b0d8f3bb15" msprop:DbColumnName="KhoangPhi" msprop:FriendlyName="KhoangPhi" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_NgheNghiep" msprop:design-time-name="813cc94f-1c6e-475b-8746-488ab95b47e9" msprop:DbTableName="DIM_NgheNghiep" msprop:FriendlyName="DIM_NgheNghiep" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="MaNgheNghiep" msprop:design-time-name="b1330a45-987d-4a8e-b5fe-9a9767d05ef3" msprop:DbColumnName="MaNgheNghiep" msprop:FriendlyName="MaNgheNghiep">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NhomNganh" msprop:design-time-name="975cada5-7cf6-48bd-86ba-5f52809c5da1" msprop:DbColumnName="NhomNganh" msprop:FriendlyName="NhomNganh" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_NguonDuLich" msprop:design-time-name="10d05933-b162-4208-8d49-3956c51c9496" msprop:DbTableName="DIM_NguonDuLich" msprop:FriendlyName="DIM_NguonDuLich" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="MaNguonDL" msprop:design-time-name="38122d5f-3c72-495d-a66d-3a3f879787f9" msprop:DbColumnName="MaNguonDL" msprop:FriendlyName="MaNguonDL">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="TenNguonDL" msprop:design-time-name="4c50ddc9-3c06-429c-b5db-de988009cbd5" msprop:DbColumnName="TenNguonDL" msprop:FriendlyName="TenNguonDL" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="200" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_PhuongTien" msprop:design-time-name="79e27857-f81a-4cc2-8529-5d8683fcf299" msprop:DbTableName="DIM_PhuongTien" msprop:FriendlyName="DIM_PhuongTien" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="MaPhuongTien" msprop:design-time-name="e149e382-5f2e-49fa-8073-38ff3858ebc3" msprop:DbColumnName="MaPhuongTien" msprop:FriendlyName="MaPhuongTien">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="TenPhuongTien" msprop:design-time-name="b4262cf9-276d-4bce-96fb-821a5f3e423d" msprop:DbColumnName="TenPhuongTien" msprop:FriendlyName="TenPhuongTien" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_QuocTich" msprop:design-time-name="c9609fb6-f4ed-4443-9450-8ee5ff720ee1" msprop:DbTableName="DIM_QuocTich" msprop:FriendlyName="DIM_QuocTich" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="MaQuocTich" msprop:design-time-name="0699af33-aad8-4180-a2d1-80eb1633975e" msprop:DbColumnName="MaQuocTich" msprop:FriendlyName="MaQuocTich">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="TenQuocTich" msprop:design-time-name="45170f5e-73b9-479f-8cec-44c54a98eaa9" msprop:DbColumnName="TenQuocTich" msprop:FriendlyName="TenQuocTich" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_TheLoaiDuLich" msprop:design-time-name="4ad77323-02fc-4f9a-b3b6-42aeb48aa915" msprop:DbTableName="DIM_TheLoaiDuLich" msprop:FriendlyName="DIM_TheLoaiDuLich" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="MaTheLoaiDL" msprop:design-time-name="8e3da7ee-844c-4edd-b113-05dd31dfc41e" msprop:DbColumnName="MaTheLoaiDL" msprop:FriendlyName="MaTheLoaiDL">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="TenTheLoai" msprop:design-time-name="dd925dda-4ad7-4ba9-9f54-5e0e878e8d85" msprop:DbColumnName="TenTheLoai" msprop:FriendlyName="TenTheLoai" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_ThoiGian" msprop:design-time-name="f4491e8f-c666-4e1c-9644-52aa4d5eab58" msprop:DbTableName="DIM_ThoiGian" msprop:FriendlyName="DIM_ThoiGian" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="MaThoiGian" msprop:design-time-name="df0db177-70cb-473a-8331-2061d0fa6b79" msprop:DbColumnName="MaThoiGian" msprop:FriendlyName="MaThoiGian">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NgayDangKi" msprop:design-time-name="9b86fd5a-be7d-4cd6-bf65-24f1c79cc800" msprop:DbColumnName="NgayDangKi" msprop:FriendlyName="NgayDangKi" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_Tour" msprop:design-time-name="6bb630a3-b1e9-4f39-85d9-2be0c19e0f42" msprop:DbTableName="DIM_Tour" msprop:FriendlyName="DIM_Tour" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="MaTour" msprop:design-time-name="60d57ce9-d216-4471-9e00-7a9d1d853be0" msprop:DbColumnName="MaTour" msprop:FriendlyName="MaTour">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="TenTour" msprop:design-time-name="8f3d0258-6919-49ac-81e1-e1dcb9136f7d" msprop:DbColumnName="TenTour" msprop:FriendlyName="TenTour" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_Tuoi" msprop:design-time-name="934b5395-8d8e-47d0-9532-13805a509ebc" msprop:DbTableName="DIM_Tuoi" msprop:FriendlyName="DIM_Tuoi" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="MaTuoi" msprop:design-time-name="120319ea-eb20-4cd9-9b64-7c75c4dc0668" msprop:DbColumnName="MaTuoi" msprop:FriendlyName="MaTuoi">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="KhoangTuoi" msprop:design-time-name="9a1cbfb3-b745-44f4-8725-bcf0c8f06828" msprop:DbColumnName="KhoangTuoi" msprop:FriendlyName="KhoangTuoi" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_VungDuLich" msprop:design-time-name="0503ef91-a797-49d2-807a-1e0bce19dc49" msprop:DbTableName="DIM_VungDuLich" msprop:FriendlyName="DIM_VungDuLich" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="MaVung" msprop:design-time-name="35dfdd1c-9068-4f29-b9a3-473fde581d65" msprop:DbColumnName="MaVung" msprop:FriendlyName="MaVung">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="TenVung" msprop:design-time-name="721ed789-37f0-43c5-9616-c3c4c48776d6" msprop:DbColumnName="TenVung" msprop:FriendlyName="TenVung" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_FACT_DoanhThu" msprop:design-time-name="8b49ea4b-832b-4df2-985c-0b773f044a8c" msprop:DbTableName="FACT_DoanhThu" msprop:FriendlyName="FACT_DoanhThu" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="MaKH" msprop:design-time-name="f4d04ac4-d38c-491b-8903-d234159d18c5" msprop:DbColumnName="MaKH" msprop:FriendlyName="MaKH">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="MaTour" msprop:design-time-name="70b0190a-c49e-413b-91dd-e73753c5baf5" msprop:DbColumnName="MaTour" msprop:FriendlyName="MaTour">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="MaVung" msprop:design-time-name="7f7e1f64-5664-49d4-987e-5d6546b74650" msprop:DbColumnName="MaVung" msprop:FriendlyName="MaVung">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="MaDonVi" msprop:design-time-name="4bacff21-8314-43fd-814f-ddf02776a795" msprop:DbColumnName="MaDonVi" msprop:FriendlyName="MaDonVi">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="MaNguonDL" msprop:design-time-name="d484b599-00cf-4cdf-97bf-fd4df4278bc8" msprop:DbColumnName="MaNguonDL" msprop:FriendlyName="MaNguonDL">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="MaPhuongTien" msprop:design-time-name="de534651-4986-4327-b936-32920a7a08c1" msprop:DbColumnName="MaPhuongTien" msprop:FriendlyName="MaPhuongTien">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="MaTheLoaiDL" msprop:design-time-name="9f6af259-e56b-4de2-b22a-97677f001b0d" msprop:DbColumnName="MaTheLoaiDL" msprop:FriendlyName="MaTheLoaiDL">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="MaThoiGian" msprop:design-time-name="3dbd9d2e-1785-474f-bbd2-1b788dc4b47a" msprop:DbColumnName="MaThoiGian" msprop:FriendlyName="MaThoiGian">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="MaPhi" msprop:design-time-name="6cea03de-4e42-4988-9cde-3182f6940315" msprop:DbColumnName="MaPhi" msprop:FriendlyName="MaPhi">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Gia" msprop:design-time-name="1562fd25-c10e-4733-aa0f-c802861db96f" msprop:DbColumnName="Gia" msprop:FriendlyName="Gia" type="xs:long" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_FACT_ThongTinKhachHang" msprop:design-time-name="92eb8007-bbe0-40eb-a3cc-43ced140b2ee" msprop:DbTableName="FACT_ThongTinKhachHang" msprop:FriendlyName="FACT_ThongTinKhachHang" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="MaKH" msprop:design-time-name="326b3b19-197c-4ec5-9b61-c57ed6310982" msprop:DbColumnName="MaKH" msprop:FriendlyName="MaKH">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="MaTuoi" msprop:design-time-name="f443a796-fb89-4792-ac50-616320d0e198" msprop:DbColumnName="MaTuoi" msprop:FriendlyName="MaTuoi">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="MaQuocTich" msprop:design-time-name="0259da73-cafa-4b22-8905-04b3362a278d" msprop:DbColumnName="MaQuocTich" msprop:FriendlyName="MaQuocTich">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="MaDanhGia" msprop:design-time-name="68735440-11af-416f-86b4-6d4868a7e1d4" msprop:DbColumnName="MaDanhGia" msprop:FriendlyName="MaDanhGia">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="MaNgheNghiep" msprop:design-time-name="31118c2b-1704-45db-805e-3e8c3ea0c82c" msprop:DbColumnName="MaNgheNghiep" msprop:FriendlyName="MaNgheNghiep">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_sysdiagrams" msprop:design-time-name="a2437bff-8825-4168-a968-fc380cdf9645" msprop:DbTableName="sysdiagrams" msprop:FriendlyName="sysdiagrams" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="name" msprop:design-time-name="a6a0de13-861f-4b19-8e09-279f3b487db8" msprop:DbColumnName="name" msprop:FriendlyName="name">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="128" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="principal_id" msprop:design-time-name="40321f3b-ec12-466d-bf67-01ee2588874a" msprop:DbColumnName="principal_id" msprop:FriendlyName="principal_id" type="xs:int" />
+                  <xs:element name="diagram_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="e3cd1024-e3ed-4a4f-95e9-cff4758e22f6" msprop:DbColumnName="diagram_id" msprop:FriendlyName="diagram_id" type="xs:int" />
+                  <xs:element name="version" msprop:design-time-name="1d17d4d4-c90c-468c-a419-b5cc1c286f62" msprop:DbColumnName="version" msprop:FriendlyName="version" type="xs:int" minOccurs="0" />
+                  <xs:element name="definition" msprop:design-time-name="d4390668-40b5-4f9c-9127-bab2cab7dc75" msprop:DataSize="0" msprop:DbColumnName="definition" msprop:FriendlyName="definition" type="xs:base64Binary" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_DanhGia" />
+          <xs:field xpath="MaDanhGia" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_DonViToChuc_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_DonViToChuc" />
+          <xs:field xpath="MaDonVi" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_KhachHang_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_KhachHang" />
+          <xs:field xpath="MaKH" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_MaPhi_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_MaPhi" />
+          <xs:field xpath="MaPhi" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_NgheNghiep_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_NgheNghiep" />
+          <xs:field xpath="MaNgheNghiep" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_NguonDuLich_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_NguonDuLich" />
+          <xs:field xpath="MaNguonDL" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_PhuongTien_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_PhuongTien" />
+          <xs:field xpath="MaPhuongTien" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_QuocTich_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_QuocTich" />
+          <xs:field xpath="MaQuocTich" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_TheLoaiDuLich_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_TheLoaiDuLich" />
+          <xs:field xpath="MaTheLoaiDL" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_ThoiGian_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_ThoiGian" />
+          <xs:field xpath="MaThoiGian" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_Tour_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_Tour" />
+          <xs:field xpath="MaTour" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_Tuoi_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_Tuoi" />
+          <xs:field xpath="MaTuoi" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_VungDuLich_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_VungDuLich" />
+          <xs:field xpath="MaVung" />
+        </xs:unique>
+        <xs:unique name="dbo_FACT_DoanhThu_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_FACT_DoanhThu" />
+          <xs:field xpath="MaKH" />
+          <xs:field xpath="MaTour" />
+          <xs:field xpath="MaVung" />
+          <xs:field xpath="MaDonVi" />
+          <xs:field xpath="MaNguonDL" />
+          <xs:field xpath="MaPhuongTien" />
+          <xs:field xpath="MaTheLoaiDL" />
+          <xs:field xpath="MaThoiGian" />
+          <xs:field xpath="MaPhi" />
+        </xs:unique>
+        <xs:unique name="dbo_FACT_ThongTinKhachHang_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_FACT_ThongTinKhachHang" />
+          <xs:field xpath="MaKH" />
+          <xs:field xpath="MaTuoi" />
+          <xs:field xpath="MaQuocTich" />
+          <xs:field xpath="MaDanhGia" />
+          <xs:field xpath="MaNgheNghiep" />
+        </xs:unique>
+        <xs:unique name="dbo_sysdiagrams_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_sysdiagrams" />
+          <xs:field xpath="diagram_id" />
+        </xs:unique>
+        <xs:keyref name="FK_FACT_KhachHang_DIM_KhachHang" refer="dbo_DIM_KhachHang_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_ThongTinKhachHang" />
+          <xs:field xpath="MaKH" />
+        </xs:keyref>
+        <xs:keyref name="FK_FACT_KhachHang_DIM_NgheNghiep" refer="dbo_DIM_NgheNghiep_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_ThongTinKhachHang" />
+          <xs:field xpath="MaNgheNghiep" />
+        </xs:keyref>
+        <xs:keyref name="FK_FACT_KhachHang_DIM_QuocTich" refer="dbo_DIM_QuocTich_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_ThongTinKhachHang" />
+          <xs:field xpath="MaQuocTich" />
+        </xs:keyref>
+        <xs:keyref name="FK_FACT_KhachHang_DIM_DanhGia" refer="Constraint1">
+          <xs:selector xpath=".//dbo_FACT_ThongTinKhachHang" />
+          <xs:field xpath="MaDanhGia" />
+        </xs:keyref>
+        <xs:keyref name="FK_FACT_KhachHang_DIM_Tuoi" refer="dbo_DIM_Tuoi_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_ThongTinKhachHang" />
+          <xs:field xpath="MaTuoi" />
+        </xs:keyref>
+        <xs:keyref name="FK_FACT_DoanhThu_DIM_PhuongTien" refer="dbo_DIM_PhuongTien_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_DoanhThu" />
+          <xs:field xpath="MaPhuongTien" />
+        </xs:keyref>
+        <xs:keyref name="FK_FACT_DoanhThu_DIM_ThoiGian" refer="dbo_DIM_ThoiGian_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_DoanhThu" />
+          <xs:field xpath="MaThoiGian" />
+        </xs:keyref>
+        <xs:keyref name="FK_FACT_DoanhThu_DIM_KhachHang" refer="dbo_DIM_KhachHang_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_DoanhThu" />
+          <xs:field xpath="MaKH" />
+        </xs:keyref>
+        <xs:keyref name="FK_FACT_DoanhThu_DIM_Tour" refer="dbo_DIM_Tour_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_DoanhThu" />
+          <xs:field xpath="MaTour" />
+        </xs:keyref>
+        <xs:keyref name="FK_FACT_DoanhThu_DIM_NguonDuLich" refer="dbo_DIM_NguonDuLich_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_DoanhThu" />
+          <xs:field xpath="MaNguonDL" />
+        </xs:keyref>
+        <xs:keyref name="FK_FACT_DoanhThu_DIM_VungDuLich" refer="dbo_DIM_VungDuLich_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_DoanhThu" />
+          <xs:field xpath="MaVung" />
+        </xs:keyref>
+        <xs:keyref name="FK_FACT_DoanhThu_DIM_MaPhi" refer="dbo_DIM_MaPhi_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_DoanhThu" />
+          <xs:field xpath="MaPhi" />
+        </xs:keyref>
+        <xs:keyref name="FK_FACT_DoanhThu_DIM_DonViToChuc" refer="dbo_DIM_DonViToChuc_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_DoanhThu" />
+          <xs:field xpath="MaDonVi" />
+        </xs:keyref>
+        <xs:keyref name="FK_FACT_DoanhThu_DIM_TheLoaiDuLich" refer="dbo_DIM_TheLoaiDuLich_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_DoanhThu" />
+          <xs:field xpath="MaTheLoaiDL" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Data_x0020_Warehouse xmlns="" />
+  </Schema>
+</DataSourceView>

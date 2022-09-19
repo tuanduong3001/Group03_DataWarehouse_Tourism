@@ -1,0 +1,145 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>ssas</Database>
+    <Server>localhost</Server>
+    <ConnectionString>Data Source=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>7p1BeWvh8F5QTSOV8eb5KHBr9T8=6/1/2022 9:57:11 AM6/1/2022 9:57:11 AM</TimeStamp>
+        <ID>
+          <String>Data Warehouse</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>0ZHf/hK/JLfUTMIzgsD6bSLrWvQ=6/1/2022 9:57:21 AM6/1/2022 9:57:20 AM</TimeStamp>
+        <ID>
+          <String>Data Warehouse</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>f5e/TiVsyJGp2LvrQUIRmeYBvok=6/1/2022 9:59:06 AM6/1/2022 9:57:43 AM</TimeStamp>
+        <ID>
+          <String>DIM The Loai Du Lich</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>yANXJa4Cf6Q5e8E+YLibsbtdRc4=6/1/2022 9:59:06 AM6/1/2022 9:57:43 AM</TimeStamp>
+        <ID>
+          <String>DIM Don Vi To Chuc</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>j0FlTqk5klS5+bsojJxHP8sSYc0=6/1/2022 9:59:06 AM6/1/2022 9:57:43 AM</TimeStamp>
+        <ID>
+          <String>DIM Ma Phi</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>fAyTbYjTg3iLddfSV/Y8la03SNA=6/1/2022 9:59:06 AM6/1/2022 9:57:43 AM</TimeStamp>
+        <ID>
+          <String>DIM Vung Du Lich</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>tNFR9/H0hUVrkPJpl+mk4xtb8GY=6/1/2022 9:59:06 AM6/1/2022 9:57:43 AM</TimeStamp>
+        <ID>
+          <String>DIM Nguon Du Lich</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>k7IuvYiUce3m8yvKuuCNK/1Z+og=6/1/2022 9:59:06 AM6/1/2022 9:57:43 AM</TimeStamp>
+        <ID>
+          <String>DIM Tour</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>/YVtc++fNibkHWO1huoYcQEwv4c=6/1/2022 9:59:06 AM6/1/2022 9:57:43 AM</TimeStamp>
+        <ID>
+          <String>DIM Khach Hang</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>iZ/7Jv0kWAf1PWgpnKUacyrfMqI=6/1/2022 9:59:06 AM6/1/2022 9:57:44 AM</TimeStamp>
+        <ID>
+          <String>DIM Thoi Gian</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>kWLdImdqLfnSbYKZs3oiH0GHKJQ=6/1/2022 9:59:06 AM6/1/2022 9:57:44 AM</TimeStamp>
+        <ID>
+          <String>DIM Phuong Tien</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>47CI3fW3lYzv6JvL6/4Xy/Ma+hU=6/1/2022 9:59:06 AM6/1/2022 9:57:44 AM</TimeStamp>
+        <ID>
+          <String>DIM Tuoi</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>5Uhre9E8ghpfEKmby/scO3hih9Y=6/1/2022 9:59:06 AM6/1/2022 9:57:44 AM</TimeStamp>
+        <ID>
+          <String>DIM Danh Gia</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>xy7tP8lW9Rvw7JZ/p4sr9FEaKYM=6/1/2022 9:59:06 AM6/1/2022 9:57:44 AM</TimeStamp>
+        <ID>
+          <String>DIM Quoc Tich</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>xf19l8oWwQJRphMurDbQFA12rlg=6/1/2022 9:59:06 AM6/1/2022 9:57:44 AM</TimeStamp>
+        <ID>
+          <String>DIM Nghe Nghiep</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>OV54HyVa33FtJKdZKFEmUeGmyzg=6/1/2022 9:59:06 AM6/1/2022 9:57:43 AMrDqIvy8PjM1QUSuY6LT+DlslqM4=6/1/2022 9:57:44 AM6/1/2022 9:57:43 AM</TimeStamp>
+        <ID>
+          <String>Data Warehouse</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>njgGfR4abvWvYfKvXk0+VvxzGmY=6/1/2022 4:04:25 AM6/1/2022 4:04:25 AM</TimeStamp>
+      <ID>
+        <String>ssas</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2022-06-01T02:59:25.856667Z</LastDeployed>
+</DeploymentSnapshot>
